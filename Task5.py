@@ -11,9 +11,12 @@ B.append(int(input('Coordinate B(x,..,..) ')))
 B.append(int(input('Coordinate B(..,y,..) ')))
 B.append(int(input('Coordinate B(..,..,z) ')))
 
+
 def SqrSum(a):
-    res = (B[a] - A[a])**2
+    res = (B[a] - A[a]) ** 2
     return res
+
+
 dist = type(float)
-dist = (SqrSum(0) + SqrSum(1) + SqrSum(2))**0.5
+dist = (SqrSum(0) + SqrSum(1) + SqrSum(2)) ** 0.5
 print(round(dist, 3))
